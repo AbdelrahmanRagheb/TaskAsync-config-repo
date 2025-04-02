@@ -16,8 +16,4 @@ spring:
     username: ${RABBITMQ_USERNAME}
     password: ${RABBITMQ_PASSWORD}
     connection-timeout: 10s
-  cloud:
-    stream:
-      bindings:
-        sendNotification-out-0:
-          destination: task-notifications
+  
