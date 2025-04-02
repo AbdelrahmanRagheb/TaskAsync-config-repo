@@ -1,8 +1,8 @@
   datasource:
     url: jdbc:mysql://localhost:3000/task-service
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: root
+    password: root
   jpa:
     show-sql: true
   sql:
@@ -12,8 +12,8 @@
   rabbitmq:
     host: "localhost"
     port: 5672
-    username: ${RABBITMQ_USERNAME}
-    password: ${RABBITMQ_PASSWORD}
+    username: guest
+    password: guest
     connection-timeout: 10s
   cloud:
     stream:
