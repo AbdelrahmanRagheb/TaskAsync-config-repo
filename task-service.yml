@@ -1,5 +1,5 @@
   datasource:
-    url: jdbc:mysql://localhost:3000/task-service
+    url: jdbc:mysql://localhost:3000/task-service?useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
