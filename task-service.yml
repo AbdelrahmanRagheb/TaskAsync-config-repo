@@ -1,9 +1,9 @@
 spring:
-  datasource:
+    datasource:
     url: jdbc:mysql://localhost:3000/task-service
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     show-sql: true
   sql:
@@ -13,8 +13,8 @@ spring:
   rabbitmq:
     host: "localhost"
     port: 5672
-    username: guest
-    password: guest
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
     connection-timeout: 10s
   cloud:
     stream:
