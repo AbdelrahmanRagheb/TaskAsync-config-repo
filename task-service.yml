@@ -1,0 +1,22 @@
+  datasource:
+    url: jdbc:mysql://localhost:3000/task-service
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: true
+  sql:
+    init:
+      mode: always
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+    connection-timeout: 10s
+  cloud:
+    stream:
+      bindings:
+        sendNotification-out-0:
+          destination: task-notifications
