@@ -7,7 +7,7 @@ eureka:
     fetchRegistery: false
     registerWithEureka: false
     service-url:
-      default-zone: ${EUREKA_URL}
+      defaultZone: ${EUREKA_URL}
 management:
   endpoints:
     web:
