@@ -30,14 +30,13 @@ management:
     liveness-state:
       enabled: true
   endpoint:
-    shutdown:
+    - shutdown:
       enabled: true
-  endpoint:
-    health:
+    - health:
       probes:
         enabled: true
 
-endpoints: 
+endpoints:
   shutdown:
     enabled: true
 
