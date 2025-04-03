@@ -38,3 +38,9 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: ${EUREKA_URL}
+
+info:
+  app:
+    name: "task-srevice"
+    description: "TaskAsync task application"
+    version: "1.0.0"
