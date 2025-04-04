@@ -5,11 +5,11 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=api/users/**
+            - Path=/api/users/**
         - id: task-service
           uri: lb://task-service
           predicates:
-            - Path=api/tasks/**
+            - Path=/api/tasks/**
      
   security:
     oauth2:
