@@ -10,6 +10,8 @@ spring:
           uri: lb:TASK-SERVICE
           predicates:
             - Path=api/tasks/**
+user-service:
+  url: http://user-service
 
   security:
     oauth2:
