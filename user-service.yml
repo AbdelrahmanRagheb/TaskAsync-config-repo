@@ -51,6 +51,6 @@ eureka:
 
 info:
   app:
-    name: "task-service"
-    description: "TaskAsync task application"
+    name: "user-service"
+    description: "TaskAsync user application"
     version: "1.0.0"
