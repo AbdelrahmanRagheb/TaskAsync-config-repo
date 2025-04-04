@@ -51,8 +51,6 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: ${EUREKA_URL}
-user-service:
-  url: http://user-service
 
 logging:
   level:
