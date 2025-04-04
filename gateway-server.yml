@@ -10,9 +10,6 @@ spring:
           uri: lb:TASK-SERVICE
           predicates:
             - Path=api/tasks/**
-user-service:
-  url: http://user-service
-
   security:
     oauth2:
       client:
@@ -53,7 +50,9 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: ${EUREKA_URL}
-      
+user-service:
+  url: http://user-service
+
 logging:
   level:
     org.springframework.security: DEBUG
