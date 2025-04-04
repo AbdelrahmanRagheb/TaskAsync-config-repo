@@ -3,11 +3,11 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: lb:user-service
+          uri: lb://user-service
           predicates:
             - Path=api/users/**
         - id: task-service
-          uri: lb:TASK-SERVICE
+          uri: lb://task-service
           predicates:
             - Path=api/tasks/**
       discovery:
@@ -55,7 +55,7 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_URL}
 user-service:
-  url: lb:user-service
+  url: http://user-service
 
 logging:
   level:
