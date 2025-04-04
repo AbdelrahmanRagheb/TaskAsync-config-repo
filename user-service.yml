@@ -27,9 +27,15 @@ management:
     liveness-state:
       enabled: true
   endpoint:
+    shutdown:
+      enabled: true
     health:
       probes:
         enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
 eureka:
   instance:
     prefer-ip-address: true
