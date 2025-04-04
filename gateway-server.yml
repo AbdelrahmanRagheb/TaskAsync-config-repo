@@ -10,10 +10,7 @@ spring:
           uri: lb://task-service
           predicates:
             - Path=api/tasks/**
-      discovery:
-        locator:
-          enabled: true  
-          lower-case-service-id: true 
+     
   security:
     oauth2:
       client:
