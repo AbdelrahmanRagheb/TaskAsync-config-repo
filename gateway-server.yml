@@ -20,7 +20,7 @@ spring:
         registration:
           gateway-client:
             provider: keycloak
-            client-id: TaskAsync-CC
+            client-id: TASKASYNC
             client-secret: ${KEYCLOAK_CLIENT_SECRET}
             scope: openid, profile, email
             authorization-grant-type: authorization_code
