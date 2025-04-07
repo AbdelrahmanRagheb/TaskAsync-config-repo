@@ -20,11 +20,3 @@ management:
     health:
       probes:
         enabled: true
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    service-url:
-      defaultZone: ${EUREKA_URL}
