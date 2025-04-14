@@ -6,11 +6,21 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/users/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: userServiceCircuitBreaker
+                fallbackUri: forward:/fallback/user
         - id: task-service
           uri: lb://task-service
           predicates:
             - Path=/api/tasks/**
-     
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: taskServiceCircuitBreaker
+                fallbackUri: forward:/fallback/task
+
   security:
     oauth2:
       client:
@@ -43,6 +53,7 @@ management:
     health:
       probes:
         enabled: true
+
 eureka:
   instance:
     prefer-ip-address: true
